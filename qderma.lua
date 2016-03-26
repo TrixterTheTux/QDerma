@@ -253,6 +253,8 @@ function QCollapsibleCategory:Paint( w, h )
 end
 
 function QCollapsibleCategory:PerformLayout()
+	
+	DCollapsibleCategory.PerformLayout(self)
 
     timer.Simple( 0, function()
         if self.ExtraPerformLayout then
